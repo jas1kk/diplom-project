@@ -1,0 +1,144 @@
+#cart-container {
+    width: 70%;
+    height: 100%;
+    margin: 0px auto 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px;
+}
+
+#cart {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#favorites {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%; /* Добавьте это */
+}
+
+.cart-item {
+    display: flex;
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0e0e0;
+    position: relative; /* Для позиционирования кнопок */
+}
+
+.favorite-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 140px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0e0e0;
+}
+
+.favorite-3 {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.favorite-3 svg {
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+
+.favorite-3:hover {
+    background-color: #f0f0f0;
+}
+
+.remove-from-favorites {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.remove-from-favorites:hover {
+    background-color: #b52b3a;
+}
+
+.product-image{
+    width: 80px;
+    height: 80px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    min-height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: #ffffff;
+    border-top: 1px solid #eee;
+}
+
+@media (max-width: 1200px) {
+    #cart-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    #cart-container {
+        flex-direction: column;
+    }
+    
+    .favorite-item {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .favorite-3 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .product-image {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+    #cart-container {
+        padding: 10px;
+    }
+    
+    .favorite-item {
+        padding: 15px;
+    }
+}

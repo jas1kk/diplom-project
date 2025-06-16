@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Смартфоны</title>
+</head>
+<body>
+    <div id="notification-container"></div>
+    <!-- Верхняя панель -->
+    <div class="top-bar">
+        <div class="container">
+            <nav class="top-nav">
+                <a href="history.html">О компании</a>
+                <a href="delievry.html">Доставка и оплата</a>
+                <a href="garant.html">Гарантия</a>
+                <a href="contacts.html">Контакты</a>
+                <a href="gift.html">Подарочные сертификаты</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Основное меню -->
+    <header class="main-header">
+        <div class="container-header">
+            <div class="header-content">
+                <a href="../index.html" class="logo">
+                    <img src="../images/logo.png" alt="">
+                </a>
+
+                <div class="catalog-dropdown">
+                    <button class="catalog-btn">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 28 28" fill="currentColor"><path d="M2 4C1.44772 4 1 4.44772 1 5C1 5.55228 1.44772 6 2 6V4ZM9.2 6C9.75229 6 10.2 5.55228 10.2 5C10.2 4.44772 9.75229 4 9.2 4V6ZM2 11.125C1.44772 11.125 1 11.5727 1 12.125C1 12.6773 1.44772 13.125 2 13.125V11.125ZM6.8 13.125C7.35228 13.125 7.8 12.6773 7.8 12.125C7.8 11.5727 7.35228 11.125 6.8 11.125V13.125ZM2 17.0625C1.44772 17.0625 1 17.5102 1 18.0625C1 18.6148 1.44772 19.0625 2 19.0625V17.0625ZM9.2 19.0625C9.75229 19.0625 10.2 18.6148 10.2 18.0625C10.2 17.5102 9.75229 17.0625 9.2 17.0625V19.0625ZM2 23C1.44772 23 1 23.4477 1 24C1 24.5523 1.44772 25 2 25V23ZM23.6 25C24.1523 25 24.6 24.5523 24.6 24C24.6 23.4477 24.1523 23 23.6 23V25ZM25.2966 19.9608C25.6892 20.3493 26.3223 20.346 26.7108 19.9534C27.0993 19.5608 27.096 18.9277 26.7034 18.5392L25.2966 19.9608ZM2 6H9.2V4H2V6ZM2 13.125H6.8V11.125H2V13.125ZM2 19.0625H9.2V17.0625H2V19.0625ZM2 25H23.6V23H2V25ZM24.4353 11.8456C24.4353 15.0642 21.7958 17.6912 18.5176 17.6912V19.6912C22.8805 19.6912 26.4353 16.1884 26.4353 11.8456H24.4353ZM18.5176 17.6912C15.2395 17.6912 12.6 15.0642 12.6 11.8456H10.6C10.6 16.1884 14.1547 19.6912 18.5176 19.6912V17.6912ZM12.6 11.8456C12.6 8.62701 15.2395 6 18.5176 6V4C14.1547 4 10.6 7.50274 10.6 11.8456H12.6ZM18.5176 6C21.7958 6 24.4353 8.62701 24.4353 11.8456H26.4353C26.4353 7.50274 22.8805 4 18.5176 4V6ZM22.7554 17.4461L25.2966 19.9608L26.7034 18.5392L24.1622 16.0245L22.7554 17.4461Z"></path></svg> Каталог
+                    </button>
+                    <div class="catalog-menu">
+                        <a href="category-smartphones.html">Смартфоны</a>
+                        <a href="category-pc-laptops.html">Ноутбуки и компьютеры</a>
+                        <a href="category-tv.html">Телевизоры</a>
+                        <a href="category-stiralki.html">Стиральные машины</a>
+                        <a href="category-fridge.html">Холодильники и морозильники</a>
+                    </div>
+                </div>
+
+                <div class="search-box">
+                    <input type="text" placeholder="Я хочу найти">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+
+                <div class="header-actions">
+<a href="#" class="action-item profile-tooltip-trigger" id="profileLink">
+  <i class="far fa-user"></i> <span id="profileName">Профиль</span>
+  <div class="profile-tooltip" id="profileTooltip"></div>
+</a>
+                    <a href="favorites.html" class="action-item">
+                        <i class="far fa-heart"></i> <span>Избранное</span>
+                        <span class="favorite-counter">0</span>
+                    </a>
+                    <a href="../pages/cart.html" class="action-item cart">
+                        <i class="fas fa-shopping-cart"></i> <span>Корзина</span>
+                        <span class="cart-counter">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Товары -->
+    <div class="container">
+      
+        <section class="products">
+              <h1>Cмартфоны</h1>
+              <br>
+            <div class="product-grid">
+                <div class="product-card" data-id="10" data-name="Смартфон Samsung Galaxy S24 FE" data-price="289990" data-category="smartphones">
+                    <div class="favorite-icon">
+                        <svg class="favorite-svg" fill="none" stroke="" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12.62 20.71C12.28 20.83 11.72 20.83 11.38 20.71C8.48 19.72 2 15.59 2 8.59C2 5.5 4.49 3 7.56 3C9.38 3 10.99 3.88 12 5.24C13.01 3.88 14.63 3 16.44 3C19.51 3 22 5.5 22 8.59C22 15.59 15.52 19.72 12.62 20.71Z" fill="#DF0613" opacity="0"></path>
+                            <path clip-rule="evenodd" d="M7.56 3.75C4.90771 3.75 2.75 5.9107 2.75 8.59C2.75 11.8405 4.25068 14.4449 6.13923 16.3799C8.03683 18.3242 10.2799 19.542 11.6223 20.0002L11.6296 20.0027L11.6296 20.0028C11.6944 20.0256 11.8286 20.05 12 20.05C12.1714 20.05 12.3056 20.0256 12.3704 20.0028L12.3777 20.0002L12.3777 20.0002C13.7201 19.542 15.9632 18.3242 17.8608 16.3799C19.7493 14.4449 21.25 11.8405 21.25 8.59C21.25 5.9107 19.0923 3.75 16.44 3.75C14.8778 3.75 13.477 4.50911 12.6021 5.68716C12.4606 5.87768 12.2373 5.99 12 5.99C11.7627 5.99 11.5394 5.87768 11.3979 5.68716C10.5225 4.5085 9.13147 3.75 7.56 3.75ZM1.25 8.59C1.25 5.0893 4.07229 2.25 7.56 2.25C9.29674 2.25 10.8646 2.95599 12.0003 4.09472C13.1385 2.95564 14.7122 2.25 16.44 2.25C19.9277 2.25 22.75 5.0893 22.75 8.59C22.75 12.3395 21.0107 15.3001 18.9342 17.4276C16.8683 19.5443 14.4235 20.8861 12.8657 21.4186C12.5914 21.5147 12.2773 21.55 12 21.55C11.7227 21.55 11.4086 21.5147 11.1343 21.4186C9.57655 20.8861 7.13169 19.5443 5.06577 17.4276C2.98932 15.3001 1.25 12.3395 1.25 8.59Z" fill="#8E979F" fill-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <a href="product.html?id=10" class="product-link">
+                        <img src="https://api.technodom.kz/f3/api/v1/images/800/800/285387_1.webp" alt="" class="product-img">
+                    </a>
+                    <h3>Смартфон Samsung Galaxy S24 FE</h3>
+                    <div class="price-row">
+                    <p class="price">289 990 ₸</p>
+                    <p class="oldprice">349 890 ₸</p>
+                    </div>
+                    <button class="add-to-cart-btn">В корзину</button>
+                </div>
+
+                <div class="product-card" data-id="11" data-name="Смартфон Samsung Galaxy A36" data-price="299999" data-category="smartphones">
+                    <div class="favorite-icon">
+                        <svg class="favorite-svg" fill="none" stroke="" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12.62 20.71C12.28 20.83 11.72 20.83 11.38 20.71C8.48 19.72 2 15.59 2 8.59C2 5.5 4.49 3 7.56 3C9.38 3 10.99 3.88 12 5.24C13.01 3.88 14.63 3 16.44 3C19.51 3 22 5.5 22 8.59C22 15.59 15.52 19.72 12.62 20.71Z" fill="#DF0613" opacity="0"></path>
+                            <path clip-rule="evenodd" d="M7.56 3.75C4.90771 3.75 2.75 5.9107 2.75 8.59C2.75 11.8405 4.25068 14.4449 6.13923 16.3799C8.03683 18.3242 10.2799 19.542 11.6223 20.0002L11.6296 20.0027L11.6296 20.0028C11.6944 20.0256 11.8286 20.05 12 20.05C12.1714 20.05 12.3056 20.0256 12.3704 20.0028L12.3777 20.0002L12.3777 20.0002C13.7201 19.542 15.9632 18.3242 17.8608 16.3799C19.7493 14.4449 21.25 11.8405 21.25 8.59C21.25 5.9107 19.0923 3.75 16.44 3.75C14.8778 3.75 13.477 4.50911 12.6021 5.68716C12.4606 5.87768 12.2373 5.99 12 5.99C11.7627 5.99 11.5394 5.87768 11.3979 5.68716C10.5225 4.5085 9.13147 3.75 7.56 3.75ZM1.25 8.59C1.25 5.0893 4.07229 2.25 7.56 2.25C9.29674 2.25 10.8646 2.95599 12.0003 4.09472C13.1385 2.95564 14.7122 2.25 16.44 2.25C19.9277 2.25 22.75 5.0893 22.75 8.59C22.75 12.3395 21.0107 15.3001 18.9342 17.4276C16.8683 19.5443 14.4235 20.8861 12.8657 21.4186C12.5914 21.5147 12.2773 21.55 12 21.55C11.7227 21.55 11.4086 21.5147 11.1343 21.4186C9.57655 20.8861 7.13169 19.5443 5.06577 17.4276C2.98932 15.3001 1.25 12.3395 1.25 8.59Z" fill="#8E979F" fill-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <a href="product.html?id=11" class="product-link">
+                        <img src="https://api.technodom.kz/f3/api/v1/images/800/800/289298_1.webp" alt="Смартфон Samsung Galaxy A36" class="product-img">
+                    </a>
+                    <h3>Смартфон Samsung Galaxy A36</h3>
+                    <div class="price-row">
+                    <p class="price">189 890 ₸</p>
+                    </div>
+                    <button class="add-to-cart-btn">В корзину</button>
+                </div>
+
+                <div class="product-card" data-id="12" data-name="Смартфон Vivo X200" data-price="299999" data-category="smartphones">
+                    <div class="favorite-icon">
+                        <svg class="favorite-svg" fill="none" stroke="" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12.62 20.71C12.28 20.83 11.72 20.83 11.38 20.71C8.48 19.72 2 15.59 2 8.59C2 5.5 4.49 3 7.56 3C9.38 3 10.99 3.88 12 5.24C13.01 3.88 14.63 3 16.44 3C19.51 3 22 5.5 22 8.59C22 15.59 15.52 19.72 12.62 20.71Z" fill="#DF0613" opacity="0"></path>
+                            <path clip-rule="evenodd" d="M7.56 3.75C4.90771 3.75 2.75 5.9107 2.75 8.59C2.75 11.8405 4.25068 14.4449 6.13923 16.3799C8.03683 18.3242 10.2799 19.542 11.6223 20.0002L11.6296 20.0027L11.6296 20.0028C11.6944 20.0256 11.8286 20.05 12 20.05C12.1714 20.05 12.3056 20.0256 12.3704 20.0028L12.3777 20.0002L12.3777 20.0002C13.7201 19.542 15.9632 18.3242 17.8608 16.3799C19.7493 14.4449 21.25 11.8405 21.25 8.59C21.25 5.9107 19.0923 3.75 16.44 3.75C14.8778 3.75 13.477 4.50911 12.6021 5.68716C12.4606 5.87768 12.2373 5.99 12 5.99C11.7627 5.99 11.5394 5.87768 11.3979 5.68716C10.5225 4.5085 9.13147 3.75 7.56 3.75ZM1.25 8.59C1.25 5.0893 4.07229 2.25 7.56 2.25C9.29674 2.25 10.8646 2.95599 12.0003 4.09472C13.1385 2.95564 14.7122 2.25 16.44 2.25C19.9277 2.25 22.75 5.0893 22.75 8.59C22.75 12.3395 21.0107 15.3001 18.9342 17.4276C16.8683 19.5443 14.4235 20.8861 12.8657 21.4186C12.5914 21.5147 12.2773 21.55 12 21.55C11.7227 21.55 11.4086 21.5147 11.1343 21.4186C9.57655 20.8861 7.13169 19.5443 5.06577 17.4276C2.98932 15.3001 1.25 12.3395 1.25 8.59Z" fill="#8E979F" fill-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <a href="product.html?id=12" class="product-link">
+                        <img src="https://api.technodom.kz/f3/api/v1/images/800/800/smartfon_vivo_x200_512gb_grey_289712_main.webp" alt="Смартфон Samsung Galaxy S21" class="product-img">
+                    </a>
+                    <h3>Смартфон Vivo X200</h3>
+                    <div class="price-row">
+                    <p class="price">549 990 ₸</p>
+                    </div>
+                    <button class="add-to-cart-btn">В корзину</button>
+                </div>
+
+                <div class="product-card" data-id="1" data-name="Смартфон Apple iPhone 15" data-price="299999" data-category="smartphones">
+                    <div class="favorite-icon">
+                        <svg class="favorite-svg" fill="none" stroke="" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12.62 20.71C12.28 20.83 11.72 20.83 11.38 20.71C8.48 19.72 2 15.59 2 8.59C2 5.5 4.49 3 7.56 3C9.38 3 10.99 3.88 12 5.24C13.01 3.88 14.63 3 16.44 3C19.51 3 22 5.5 22 8.59C22 15.59 15.52 19.72 12.62 20.71Z" fill="#DF0613" opacity="0"></path>
+                            <path clip-rule="evenodd" d="M7.56 3.75C4.90771 3.75 2.75 5.9107 2.75 8.59C2.75 11.8405 4.25068 14.4449 6.13923 16.3799C8.03683 18.3242 10.2799 19.542 11.6223 20.0002L11.6296 20.0027L11.6296 20.0028C11.6944 20.0256 11.8286 20.05 12 20.05C12.1714 20.05 12.3056 20.0256 12.3704 20.0028L12.3777 20.0002L12.3777 20.0002C13.7201 19.542 15.9632 18.3242 17.8608 16.3799C19.7493 14.4449 21.25 11.8405 21.25 8.59C21.25 5.9107 19.0923 3.75 16.44 3.75C14.8778 3.75 13.477 4.50911 12.6021 5.68716C12.4606 5.87768 12.2373 5.99 12 5.99C11.7627 5.99 11.5394 5.87768 11.3979 5.68716C10.5225 4.5085 9.13147 3.75 7.56 3.75ZM1.25 8.59C1.25 5.0893 4.07229 2.25 7.56 2.25C9.29674 2.25 10.8646 2.95599 12.0003 4.09472C13.1385 2.95564 14.7122 2.25 16.44 2.25C19.9277 2.25 22.75 5.0893 22.75 8.59C22.75 12.3395 21.0107 15.3001 18.9342 17.4276C16.8683 19.5443 14.4235 20.8861 12.8657 21.4186C12.5914 21.5147 12.2773 21.55 12 21.55C11.7227 21.55 11.4086 21.5147 11.1343 21.4186C9.57655 20.8861 7.13169 19.5443 5.06577 17.4276C2.98932 15.3001 1.25 12.3395 1.25 8.59Z" fill="#8E979F" fill-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <a href="product.html?id=1" class="product-link">
+                        <img src="https://api.technodom.kz/f3/api/v1/images/800/800/smartfon_gsm_apple_iphone_15_plus_128gb_61286748_black_mu0y3_274387_1.webp" alt="Смартфон Apple iPhone 15" class="product-img">
+                    </a>
+                    <h3>Смартфон Apple iPhone 15</h3>
+                    <div class="price-row">
+                        <p class="price">729 990 ₸</p>
+                        </div>
+                    <button class="add-to-cart-btn">В корзину</button>
+                </div>
+
+                <div class="product-card" data-id="6" data-name="Смартфон Samsung Galaxy S24 Ultra" data-price="609890" data-category="popular">
+                    <div class="favorite-icon">
+                        <svg class="favorite-svg" fill="none" stroke="" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12.62 20.71C12.28 20.83 11.72 20.83 11.38 20.71C8.48 19.72 2 15.59 2 8.59C2 5.5 4.49 3 7.56 3C9.38 3 10.99 3.88 12 5.24C13.01 3.88 14.63 3 16.44 3C19.51 3 22 5.5 22 8.59C22 15.59 15.52 19.72 12.62 20.71Z" fill="#DF0613" opacity="0"></path>
+                            <path clip-rule="evenodd" d="M7.56 3.75C4.90771 3.75 2.75 5.9107 2.75 8.59C2.75 11.8405 4.25068 14.4449 6.13923 16.3799C8.03683 18.3242 10.2799 19.542 11.6223 20.0002L11.6296 20.0027L11.6296 20.0028C11.6944 20.0256 11.8286 20.05 12 20.05C12.1714 20.05 12.3056 20.0256 12.3704 20.0028L12.3777 20.0002L12.3777 20.0002C13.7201 19.542 15.9632 18.3242 17.8608 16.3799C19.7493 14.4449 21.25 11.8405 21.25 8.59C21.25 5.9107 19.0923 3.75 16.44 3.75C14.8778 3.75 13.477 4.50911 12.6021 5.68716C12.4606 5.87768 12.2373 5.99 12 5.99C11.7627 5.99 11.5394 5.87768 11.3979 5.68716C10.5225 4.5085 9.13147 3.75 7.56 3.75ZM1.25 8.59C1.25 5.0893 4.07229 2.25 7.56 2.25C9.29674 2.25 10.8646 2.95599 12.0003 4.09472C13.1385 2.95564 14.7122 2.25 16.44 2.25C19.9277 2.25 22.75 5.0893 22.75 8.59C22.75 12.3395 21.0107 15.3001 18.9342 17.4276C16.8683 19.5443 14.4235 20.8861 12.8657 21.4186C12.5914 21.5147 12.2773 21.55 12 21.55C11.7227 21.55 11.4086 21.5147 11.1343 21.4186C9.57655 20.8861 7.13169 19.5443 5.06577 17.4276C2.98932 15.3001 1.25 12.3395 1.25 8.59Z" fill="#8E979F" fill-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <a href="product.html?id=6" class="product-link">
+                        <img src="https://api.technodom.kz/f3/api/v1/images/800/800/smartfon_gsm_samsung_sm_s928bztgskz_thx_68_200_5_galaxy_s24_ultra_5g_256gb_titanium_gray_277514_1.webp" alt="" class="product-img">
+                    </a>
+                    <h3>Смартфон Samsung Galaxy S24 Ultra</h3>
+                    <div class="price-row">
+                    <p class="price">609 890 ₸</p>
+                    <p class="oldprice">769 890 ₸</p>
+                    </div>
+                    <button class="add-to-cart-btn">В корзину</button>
+                </div>
+                <div class="product-card" data-id="9" data-name="Смартфон Samsung Galaxy Z Flip 6" data-price="559890" data-category="smartphones">
+                    <div class="favorite-icon">
+                        <svg class="favorite-svg" fill="none" stroke="" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12.62 20.71C12.28 20.83 11.72 20.83 11.38 20.71C8.48 19.72 2 15.59 2 8.59C2 5.5 4.49 3 7.56 3C9.38 3 10.99 3.88 12 5.24C13.01 3.88 14.63 3 16.44 3C19.51 3 22 5.5 22 8.59C22 15.59 15.52 19.72 12.62 20.71Z" fill="#DF0613" opacity="0"></path>
+                            <path clip-rule="evenodd" d="M7.56 3.75C4.90771 3.75 2.75 5.9107 2.75 8.59C2.75 11.8405 4.25068 14.4449 6.13923 16.3799C8.03683 18.3242 10.2799 19.542 11.6223 20.0002L11.6296 20.0027L11.6296 20.0028C11.6944 20.0256 11.8286 20.05 12 20.05C12.1714 20.05 12.3056 20.0256 12.3704 20.0028L12.3777 20.0002L12.3777 20.0002C13.7201 19.542 15.9632 18.3242 17.8608 16.3799C19.7493 14.4449 21.25 11.8405 21.25 8.59C21.25 5.9107 19.0923 3.75 16.44 3.75C14.8778 3.75 13.477 4.50911 12.6021 5.68716C12.4606 5.87768 12.2373 5.99 12 5.99C11.7627 5.99 11.5394 5.87768 11.3979 5.68716C10.5225 4.5085 9.13147 3.75 7.56 3.75ZM1.25 8.59C1.25 5.0893 4.07229 2.25 7.56 2.25C9.29674 2.25 10.8646 2.95599 12.0003 4.09472C13.1385 2.95564 14.7122 2.25 16.44 2.25C19.9277 2.25 22.75 5.0893 22.75 8.59C22.75 12.3395 21.0107 15.3001 18.9342 17.4276C16.8683 19.5443 14.4235 20.8861 12.8657 21.4186C12.5914 21.5147 12.2773 21.55 12 21.55C11.7227 21.55 11.4086 21.5147 11.1343 21.4186C9.57655 20.8861 7.13169 19.5443 5.06577 17.4276C2.98932 15.3001 1.25 12.3395 1.25 8.59Z" fill="#8E979F" fill-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <a href="product.html?id=9" class="product-link">
+                        <img src="https://api.technodom.kz/f3/api/v1/images/800/800/smartfon_gsm_samsung_galaxy_z_flip6_125126712_silver_shadow_sm_f741bzshskz_282053_1.webp" alt="" class="product-img">
+                    </a>
+                    <h3>Смартфон Samsung Galaxy Z Flip 6</h3>
+                    <div class="price-row">
+                    <p class="price">559 890 ₸</p>
+                    <p class="oldprice">609 890 ₸</p>
+                    </div>
+                    <button class="add-to-cart-btn">В корзину</button>
+                </div>
+                                <div class="product-card" data-id="7" data-name="Смартфон Samsung Galaxy S25 Ultra" data-price="729990" data-category="popular">
+                    <div class="favorite-icon">
+                        <svg class="favorite-svg" fill="none" stroke="" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12.62 20.71C12.28 20.83 11.72 20.83 11.38 20.71C8.48 19.72 2 15.59 2 8.59C2 5.5 4.49 3 7.56 3C9.38 3 10.99 3.88 12 5.24C13.01 3.88 14.63 3 16.44 3C19.51 3 22 5.5 22 8.59C22 15.59 15.52 19.72 12.62 20.71Z" fill="#DF0613" opacity="0"></path>
+                            <path clip-rule="evenodd" d="M7.56 3.75C4.90771 3.75 2.75 5.9107 2.75 8.59C2.75 11.8405 4.25068 14.4449 6.13923 16.3799C8.03683 18.3242 10.2799 19.542 11.6223 20.0002L11.6296 20.0027L11.6296 20.0028C11.6944 20.0256 11.8286 20.05 12 20.05C12.1714 20.05 12.3056 20.0256 12.3704 20.0028L12.3777 20.0002L12.3777 20.0002C13.7201 19.542 15.9632 18.3242 17.8608 16.3799C19.7493 14.4449 21.25 11.8405 21.25 8.59C21.25 5.9107 19.0923 3.75 16.44 3.75C14.8778 3.75 13.477 4.50911 12.6021 5.68716C12.4606 5.87768 12.2373 5.99 12 5.99C11.7627 5.99 11.5394 5.87768 11.3979 5.68716C10.5225 4.5085 9.13147 3.75 7.56 3.75ZM1.25 8.59C1.25 5.0893 4.07229 2.25 7.56 2.25C9.29674 2.25 10.8646 2.95599 12.0003 4.09472C13.1385 2.95564 14.7122 2.25 16.44 2.25C19.9277 2.25 22.75 5.0893 22.75 8.59C22.75 12.3395 21.0107 15.3001 18.9342 17.4276C16.8683 19.5443 14.4235 20.8861 12.8657 21.4186C12.5914 21.5147 12.2773 21.55 12 21.55C11.7227 21.55 11.4086 21.5147 11.1343 21.4186C9.57655 20.8861 7.13169 19.5443 5.06577 17.4276C2.98932 15.3001 1.25 12.3395 1.25 8.59Z" fill="#8E979F" fill-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <a href="product.html?id=7" class="product-link">
+                        <img src="https://api.technodom.kz/f3/api/v1/images/800/800/288460_1.webp" alt="" class="product-img">
+                    </a>
+                    <h3>Смартфон Samsung Galaxy S25 Ultra</h3>
+                    <div class="price-row">
+                    <p class="price">699 890 ₸</p>
+                    <p class="oldprice">829 890 ₸</p>
+                    </div>
+                    <button class="add-to-cart-btn">В корзину</button>
+                </div>
+                                <div class="product-card" data-id="5" data-name="Смартфон Apple iPhone 16 Pro" data-price="729990" data-url="/products/5" data-category="popular">
+                    <div class="favorite-icon">
+                        <svg class="favorite-svg" fill="none" stroke="" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12.62 20.71C12.28 20.83 11.72 20.83 11.38 20.71C8.48 19.72 2 15.59 2 8.59C2 5.5 4.49 3 7.56 3C9.38 3 10.99 3.88 12 5.24C13.01 3.88 14.63 3 16.44 3C19.51 3 22 5.5 22 8.59C22 15.59 15.52 19.72 12.62 20.71Z" fill="#DF0613" opacity="0"></path>
+                            <path clip-rule="evenodd" d="M7.56 3.75C4.90771 3.75 2.75 5.9107 2.75 8.59C2.75 11.8405 4.25068 14.4449 6.13923 16.3799C8.03683 18.3242 10.2799 19.542 11.6223 20.0002L11.6296 20.0027L11.6296 20.0028C11.6944 20.0256 11.8286 20.05 12 20.05C12.1714 20.05 12.3056 20.0256 12.3704 20.0028L12.3777 20.0002L12.3777 20.0002C13.7201 19.542 15.9632 18.3242 17.8608 16.3799C19.7493 14.4449 21.25 11.8405 21.25 8.59C21.25 5.9107 19.0923 3.75 16.44 3.75C14.8778 3.75 13.477 4.50911 12.6021 5.68716C12.4606 5.87768 12.2373 5.99 12 5.99C11.7627 5.99 11.5394 5.87768 11.3979 5.68716C10.5225 4.5085 9.13147 3.75 7.56 3.75ZM1.25 8.59C1.25 5.0893 4.07229 2.25 7.56 2.25C9.29674 2.25 10.8646 2.95599 12.0003 4.09472C13.1385 2.95564 14.7122 2.25 16.44 2.25C19.9277 2.25 22.75 5.0893 22.75 8.59C22.75 12.3395 21.0107 15.3001 18.9342 17.4276C16.8683 19.5443 14.4235 20.8861 12.8657 21.4186C12.5914 21.5147 12.2773 21.55 12 21.55C11.7227 21.55 11.4086 21.5147 11.1343 21.4186C9.57655 20.8861 7.13169 19.5443 5.06577 17.4276C2.98932 15.3001 1.25 12.3395 1.25 8.59Z" fill="#8E979F" fill-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <a href="product.html?id=5" class="product-link">
+                        <img src="https://api.technodom.kz/f3/api/v1/images/800/800/284649.webp" alt="" class="product-img">
+                    </a>
+                    <h3>Смартфон Apple iPhone 16 Pro</h3>
+                    <div class="price-row">
+                    <p class="price">789 990 ₸</p>
+                    <p class="oldprice">879 990 ₸</p>
+                    </div>
+                    <button class="add-to-cart-btn">В корзину</button>
+                </div>
+        </section>
+    </div>
+    </div>
+</div>
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Интернет-магазин</h3>
+                    <ul>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Техноблог</a></li>
+                        <li><a href="#">Technodom PLUS</a></li>
+                        <li><a href="#">Техносервис</a></li>
+                        <li><a href="#">Подарочные карты</a></li>
+                        <li><a href="#">Товары в кредит</a></li>
+                        <li><a href="#">Гарантия низкой цены</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Компания «NextTech»</h3>
+                    <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Забота о клиентах</a></li>
+                        <li><a href="#">Карьера в технодоме</a></li>
+                        <li><a href="#">Корпоративные продажи</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Наши магазины</a></li>
+                        <li><a href="#">Поставщикам</a></li>
+                        <li><a href="#">Логистическая платформа Airba Logistics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Помощь покупателю</h3>
+                    <ul>
+                        <li><a href="#">Как сделать заказ</a></li>
+                        <li><a href="#">Условия установки кондиционеров</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Условия возврата и обмена</a></li>
+                        <li><a href="#">Умный покупатель</a></li>
+                        <li><a href="#">Премиум товары</a></li>
+                        <li><a href="#">Все бренды</a></li>
+                        <li><a href="#">Сборка игровых компьютеров</a></li>
+                        <li><a href="#">Правила розыгрышей</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© АО «NextTech Operator» 2002—2024</p>
+                <p>Горячая линия с 9:00 до 22:00 ежедневно</p>
+            </div>
+        </div>
+    </footer>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const profileLink = document.getElementById('profileLink');
+    const profileName = document.getElementById('profileName');
+    const profileTooltip = document.getElementById('profileTooltip');
+
+    const users = JSON.parse(localStorage.getItem('users')) || {};
+    const loggedInEmail = localStorage.getItem('loggedInUser');
+    const currentUser = loggedInEmail ? users[loggedInEmail] : null;
+
+    function updateTooltip() {
+      if (currentUser) {
+        profileName.textContent = currentUser.name;
+        profileTooltip.innerHTML = `
+          <p>Вы вошли как <strong>${currentUser.name}</strong></p>
+          <button class="logout-btn">Выйти</button>
+        `;
+        document.querySelector('.logout-btn').addEventListener('click', () => {
+          localStorage.removeItem('loggedInUser');
+          location.reload();
+        });
+      } else {
+        profileName.textContent = "Профиль";
+        profileTooltip.innerHTML = `
+         <p>Авторизуйтесь по эл. почте чтобы:</p>
+          <ul>
+              <li>📌 Отслеживать заказы</li>
+              <li>📌 Пользоваться персональными скидками</li>
+              <li>📌 Получать бонусы</li>
+          </ul>
+          <button class="auth-btn">Авторизоваться</button>
+        `;
+        document.querySelector('.auth-btn').addEventListener('click', () => {
+          window.location.href = 'auth.html';
+        });
+      }
+    }
+
+    updateTooltip();
+
+    // Показывать tooltip при наведении
+    profileLink.addEventListener('mouseenter', () => {
+      profileTooltip.style.display = 'block';
+    });
+    profileLink.addEventListener('mouseleave', () => {
+      profileTooltip.style.display = 'none';
+    });
+  });
+</script>
+    <script src="../scripts/category.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const searchBox = document.querySelector('.search-box');
+  const searchInput = searchBox.querySelector('input');
+  const searchBtn = searchBox.querySelector('.search-btn');
+  const productCards = document.querySelectorAll('.product-card');
+  const productGrid = document.querySelector('.product-grid');
+
+  const searchResultsContainer = document.createElement('div');
+  searchResultsContainer.className = 'search-results-container';
+  searchResultsContainer.style.display = 'none';
+  searchBox.appendChild(searchResultsContainer);
+
+  const searchDropdown = document.createElement('div');
+  searchDropdown.className = 'search-dropdown';
+  searchBox.appendChild(searchDropdown);
+
+  searchInput.addEventListener('focus', function () {
+    searchDropdown.style.display = 'block';
+    updateSearchDropdown('');
+  });
+
+  searchInput.addEventListener('blur', function () {
+    setTimeout(() => {
+      searchDropdown.style.display = 'none';
+    }, 200);
+  });
+
+  function updateSearchDropdown(query) {
+    searchDropdown.innerHTML = '';
+
+    if (query.trim() === '') {
+      const popularSearches = ['Смартфоны', 'Телевизоры', 'Ноутбуки', 'Холодильники'];
+      popularSearches.forEach(item => {
+        const searchItem = document.createElement('div');
+        searchItem.className = 'search-dropdown-item';
+        searchItem.textContent = item;
+        searchItem.addEventListener('click', function () {
+          searchInput.value = item;
+          performSearch(item);
+        });
+        searchDropdown.appendChild(searchItem);
+      });
+    } else {
+      const filteredProducts = Array.from(productCards).filter(card => {
+        const name = card.getAttribute('data-name').toLowerCase();
+        return name.includes(query.toLowerCase());
+      });
+
+      if (filteredProducts.length > 0) {
+        filteredProducts.slice(0, 5).forEach(card => {
+          const searchItem = document.createElement('div');
+          searchItem.className = 'search-dropdown-item';
+          searchItem.textContent = card.getAttribute('data-name');
+          searchItem.addEventListener('click', function () {
+            const productId = card.getAttribute('data-id');
+            if (productId) {
+              window.location.href = `product.html?id=${productId}`;
+            }
+          });
+          searchDropdown.appendChild(searchItem);
+        });
+      } else {
+        const noResults = document.createElement('div');
+        noResults.className = 'search-dropdown-item no-results';
+        noResults.textContent = 'Ничего не найдено';
+        searchDropdown.appendChild(noResults);
+      }
+    }
+  }
+
+  function performSearch(query) {
+    if (query.trim() === '') {
+      searchResultsContainer.style.display = 'none';
+      productCards.forEach(card => {
+        card.style.display = 'block';
+      });
+      return;
+    }
+
+    const results = Array.from(productCards).filter(card => {
+      const name = card.getAttribute('data-name').toLowerCase();
+      return name.includes(query.toLowerCase());
+    });
+
+    if (results.length > 0) {
+      productCards.forEach(card => {
+        card.style.display = 'none';
+      });
+      results.forEach(card => {
+        card.style.display = 'block';
+      });
+      searchResultsContainer.style.display = 'none';
+    } else {
+      searchResultsContainer.style.display = 'block';
+      searchResultsContainer.innerHTML = `<p>По запросу "${query}" ничего не найдено</p>`;
+      productCards.forEach(card => {
+        card.style.display = 'none';
+      });
+    }
+  }
+
+  searchInput.addEventListener('input', function () {
+    updateSearchDropdown(this.value);
+  });
+
+  searchBtn.addEventListener('click', function () {
+    performSearch(searchInput.value);
+  });
+
+  searchInput.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+      performSearch(this.value);
+    }
+  });
+});
+</script>
+</body>
+</html>
